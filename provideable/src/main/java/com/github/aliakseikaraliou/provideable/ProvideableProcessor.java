@@ -70,6 +70,7 @@ public class ProvideableProcessor extends AbstractProcessor {
 
 		TypeSpec provider = TypeSpec.interfaceBuilder(options.getTypeName())
 				.addMethod(method)
+				.addAnnotation(FunctionalInterface.class)
 				.addModifiers(Modifier.PUBLIC)
 				.build();
 

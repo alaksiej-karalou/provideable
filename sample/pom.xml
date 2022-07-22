@@ -20,7 +20,7 @@
         <dependency>
             <groupId>com.github.aliakseikaraliou.provideable</groupId>
             <artifactId>provideable</artifactId>
-            <version>${version}</version>
+            <version>0.0.1</version>
         </dependency>
     </dependencies>
 
@@ -35,7 +35,7 @@
                         <annotationProcessorPath>
                             <groupId>com.github.aliakseikaraliou.provideable</groupId>
                             <artifactId>provideable</artifactId>
-                            <version>${version}</version>
+                            <version>0.0.1</version>
                         </annotationProcessorPath>
                     </annotationProcessorPaths>
                 </configuration>
