@@ -98,7 +98,7 @@ public class ProvideableProcessor extends AbstractProcessor {
 	private JavaFile generateProvider(ProvideableOptions options) {
 		AnnotationSpec generatedAnnotation = AnnotationSpec.builder(Generated.class)
 				.addMember("value", "\"%s\"".formatted(ProvideableProcessor.class.getName()))
-				.addMember("date", "\"%s\"".formatted(ZonedDateTime.now().format(DateTimeFormatter.ISO_INSTANT)))
+.addMember("date", "\"%s\"".formatted(ZonedDateTime.now(ZoneId.systemDefault()).format(DateTimeFormatter.ISO_INSTANT)))
 				.build();
 
 		MethodSpec method = MethodSpec.methodBuilder(options.getMethodName())
