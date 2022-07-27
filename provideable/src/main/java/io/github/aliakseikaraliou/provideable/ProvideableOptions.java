@@ -1,4 +1,4 @@
-package com.github.aliakseikaraliou.provideable;
+package io.github.aliakseikaraliou.provideable;
 
 import javax.lang.model.type.TypeMirror;
 
