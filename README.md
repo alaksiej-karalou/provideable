@@ -10,21 +10,39 @@ functional interface returns some type:
 
 ```java
 
+@Generated(
+		value = "io.github.aliakseikaraliou.provideable.ProvideableProcessor",
+		date = "2022-07-27T15:31:22.791603200Z"
+)
 @FunctionalInterface
 public interface SomeClassProvider {
 	SomeClass getSomeCode();
 }
 ```
 
-To generate a provider you just need to annotate your class with `@Provideable` annotation.
+### Class usage
+
+To generate a provider from class you just need to annotate your class with `@Provideable` annotation.
 
 You can modify naming in the provider using such annotation properties:
 
 | Nme         | Description                   | Default                                                |
 |-------------|-------------------------------|--------------------------------------------------------|
-| packageName | Package name for the provider | *the same as target class package* (`com.sample`)      |
+| packageName | Package name for the provider | *The same as target class package* (`com.sample`)      |
 | name        | Provider interface name       | *Target class name* + `Provider` (`SomeClassProvider`) |   
-| methodName  | Provider method name          | `get` + *Target class name* (`getSomeClass`)           |
+| methodName  | Provider method name          | `get` + *Target class name* (`getSomeClass()`)         |
+
+### Method usage
+
+To generate a provider from method you just need to annotate your class with `@Provideable` annotation.
+
+You can modify naming in the provider using such annotation properties:
+
+| Nme         | Description                   | Default                                                |
+|-------------|-------------------------------|--------------------------------------------------------|
+| packageName | Package name for the provider | *The same as method package* (`com.sample`)            |
+| name        | Provider interface name       | *Target class name* + `Provider` (`SomeClassProvider`) |   
+| methodName  | Provider method name          | *Method name* (`someMethod()`)                         |
 
 ## Installation
 
