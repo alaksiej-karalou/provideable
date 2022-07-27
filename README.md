@@ -2,7 +2,7 @@
 
 ## Usage
 
-This java library will help you to simplify process of creating provider (especially helpful in Dagger). 
+This java library will help you to simplify process of creating provider (especially helpful in Dagger).
 It uses Java annotation processing to generate provider at build time
 
 Provider is a
@@ -20,23 +20,24 @@ To generate a provider you just need to annotate your class with `@Provideable` 
 
 You can modify naming in the provider using such annotation properties:
 
-| Nme         | Description                   | Default                            |
-|-------------|-------------------------------|------------------------------------|
-| packageName | Package name for the provider | *the same as target class package* |
-| name        | Provider interface name       | *Target class name* + `Provider`   |   
-| methodName  | Provider method name          | `get` + *Target class name*        |
+| Nme         | Description                   | Default                                                |
+|-------------|-------------------------------|--------------------------------------------------------|
+| packageName | Package name for the provider | *the same as target class package* (`com.sample`)      |
+| name        | Provider interface name       | *Target class name* + `Provider` (`SomeClassProvider`) |   
+| methodName  | Provider method name          | `get` + *Target class name* (`getSomeClass`)           |
 
 ## Installation
 
 ### Maven
 
 ```xml
+
 <project>
     ...
     <dependency>
-        <groupId>com.github.aliakseikaraliou.provideable</groupId>
+        <groupId>io.github.aliaksei-karaliou</groupId>
         <artifactId>provideable</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </dependency>
 
     <build>
@@ -48,16 +49,16 @@ You can modify naming in the provider using such annotation properties:
                 <configuration>
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
-                            <groupId>com.github.aliakseikaraliou.provideable</groupId>
+                            <groupId>io.github.aliaksei-karaliou</groupId>
                             <artifactId>provideable</artifactId>
-                            <version>0.0.1</version>
+                            <version>0.0.2</version>
                         </annotationProcessorPath>
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-    
+
 
 </project>
 ```
