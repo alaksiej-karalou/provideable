@@ -42,7 +42,7 @@ public class ProvideableProcessor extends AbstractProcessor {
 			}
 		}
 
-		return true;
+return false;
 	}
 
 	private void processType(Provideable annotation, TypeElement type) throws IOException, ClassNotFoundException {
