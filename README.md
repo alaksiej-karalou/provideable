@@ -55,7 +55,7 @@ You can modify naming in the provider using such annotation properties:
     <dependency>
         <groupId>io.github.aliaksei-karaliou</groupId>
         <artifactId>provideable</artifactId>
-        <version>0.0.2</version>
+        <version>0.0.3</version>
     </dependency>
 
     <build>
@@ -69,7 +69,7 @@ You can modify naming in the provider using such annotation properties:
                         <annotationProcessorPath>
                             <groupId>io.github.aliaksei-karaliou</groupId>
                             <artifactId>provideable</artifactId>
-                            <version>0.0.2</version>
+                            <version>0.0.3</version>
                         </annotationProcessorPath>
                     </annotationProcessorPaths>
                 </configuration>
