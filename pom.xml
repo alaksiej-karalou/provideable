@@ -7,12 +7,34 @@
     <groupId>io.github.aliaksei-karaliou</groupId>
     <artifactId>provideable</artifactId>
     <version>0.0.3</version>
+    <name>provideable</name>
+    <description>Annotation-processing library generating providers</description>
+    <url>https://github.com/aliaksei-karaliou/provideable</url>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Aliaksei Karaliou</name>
+            <email>alexeykoroliov@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/aliaksei-karaliou/provideable.git</url>
+    </scm>
 
     <dependencies>
         <dependency>
